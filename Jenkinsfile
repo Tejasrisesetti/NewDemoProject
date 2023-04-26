@@ -7,8 +7,7 @@ pipeline {
         git branch: 'main', url: 'https://github.com/Tejasrisesetti/NewDemoProject.git'
       }
     }
-  }
- stages {
+  
     stage('Maven Build') {
       steps {
         bat 'mvn clean package'
