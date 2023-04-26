@@ -8,14 +8,14 @@ pipeline {
       }
     }
   }
-//  stages {
-//     stage('Maven Build') {
-//       steps {
-//         bat 'mvn clean package'
-//         bat 'mvn install'
-//       }
-//     }
-//   }
+ stages {
+    stage('Maven Build') {
+      steps {
+        bat 'mvn clean package'
+        bat 'mvn install'
+      }
+    }
+  }
 //  stages {
 //     stage('Build Docker Image') {
 //       steps {
@@ -28,5 +28,5 @@ pipeline {
 //       }
 //     }
 //   }
-//  }
+  }
 }
